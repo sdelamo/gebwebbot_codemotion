@@ -15,3 +15,7 @@ dependencies {
     compile("com.codeborne:phantomjsdriver:$phantomJsDriverVersion")
     compile 'org.spockframework:spock-core:1.0-groovy-2.4'
 }
+
+test {
+    systemProperties System.properties
+}
